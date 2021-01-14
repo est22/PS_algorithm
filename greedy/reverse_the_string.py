@@ -1,10 +1,9 @@
 numbers = input()
-change_to_zero = int(numbers[0])
-change_to_one = int(numbers[0])
-number = 0
+change_to_zero = 0
+change_to_one = 0
 
 
-if numbers[0] == '0':
+if numbers[0] == '1':   #  첫번째가 1이면, 0을 만날때마다 바꿔야함.
     change_to_zero += 1
 else:
     change_to_one += 1
