@@ -10,10 +10,10 @@ int main(){
 
     for (int i = 0; i < 4; i++){
         int coin = coins[i];
-        count += amount /  coin ;
+        count += amount / coin ;
         amount %= coin;
 
     }
-    cout << count << '\n';
+    cout << count << endl;
 
 }
