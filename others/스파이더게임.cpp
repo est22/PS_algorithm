@@ -5,7 +5,7 @@
 using namespace std;
 
 #define MAX_N   1000
-#define long long ll;
+typedef long long ll;
 
 int A[MAX_N], B[MAX_N];
 vector<int> subA, subB;
