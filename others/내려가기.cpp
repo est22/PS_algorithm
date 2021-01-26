@@ -9,11 +9,11 @@ int dpMax(int loc, int n){
     if (DMax[loc][n] > 0) return DMMax[loc][n];    
     // 점화식
     DMax[loc][n] = Dmax[loc][n-1]; // 위에서 내려오는 경우
-    if (loc > 0 && DMax[loc - 1][n - 1] > DMax[loc][n]{
-        Dmax[loc][n] = DMax[loc - 1][n - 1];
+    if (loc > 0 && dpMax[loc - 1][n - 1] > DMax[loc][n]{
+        Dmax[loc][n] = dpMax[loc - 1][n - 1];
     }
-    if (loc < 2 && DMax[loc + 1][n -1] > DMax[loc][n]){
-        DMax[loc][n] = Dmax[loc + 1][n -1];
+    if (loc < 2 && dpMax[loc + 1][n -1] > DMax[loc][n]){
+        DMax[loc][n] = dpMax[loc + 1][n -1];
 
     }
     DMax[loc][n] += nos[loc][n];
