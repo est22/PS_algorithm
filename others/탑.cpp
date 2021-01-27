@@ -4,9 +4,10 @@
 
 using namespace std;
 
-typedef pair<int,int> pii;
+typedef pair <int,int> pii;
 
 stack<pii> stk;
+
 
 int main(){
     stk.push(make_pair(10000000000,0));
