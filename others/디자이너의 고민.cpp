@@ -10,5 +10,5 @@ int N, K;
 int mp1, mp2; // mandatory piece 1, 2
 
 int main(){
-    
+
 }
