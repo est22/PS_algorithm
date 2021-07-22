@@ -9,7 +9,7 @@ for i in range(T):
     command = input()
     size = 0
 
-    for j in command:
+    for j in command: # range말고 문자열 순회
         if j == '(':
             stack.append(j)
             size += 1
