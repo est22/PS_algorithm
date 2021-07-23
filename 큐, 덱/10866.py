@@ -1,10 +1,19 @@
 # 덱
 from collections import deque
 import sys
-input = sys.stdin.readline().strip()
+input = sys.stdin.readline
 
 N = int(input())
 dq = deque()
+
+def empty():
+    if len(dq) == 0:
+        return 1
+    else:
+        return 0
+
+def size():
+    return len(dq)
 
 for i in range(N):
     func = list(input().split())
@@ -28,10 +37,7 @@ for i in range(N):
             print(dq.pop())
 
     elif func[0] == "empty":
-        if not dq:
-            print(1)
-        else:
-            print(0)
+        print(empty())
 
     elif func[0] == "front":
         if not dq:
@@ -44,3 +50,6 @@ for i in range(N):
             print(-1)
         else:
             print(dq[-1])
+
+    elif func[0] == "size":
+        print(size())
