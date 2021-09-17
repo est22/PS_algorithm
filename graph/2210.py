@@ -6,7 +6,7 @@ matrix = [list(map(str, input().split())) for _ in range(5)]
 
 def dfs(x, y, number):
     if len(number) == 6:
-        if number not in answer: #result에 없다면
+        if number not in answer:
             answer.append(number)
         return 
         
